@@ -9,12 +9,10 @@ import Footer from '../../components/Footer';
 export class Home extends Component{
     render () {
         return(
-            <>
-                <Header />
+            <>                
                 <FirstSection />
                 <SecondSection />
-                <Articles />
-                <Footer />
+                <Articles />                
             </>
         )
     }

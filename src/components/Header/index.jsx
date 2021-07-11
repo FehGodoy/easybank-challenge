@@ -3,6 +3,7 @@ import './style.css';
 import logo from '../../images/logo.svg';
 import menu from '../../images/icon-hamburger.svg';
 import closeM from '../../images/icon-close.svg';
+import {Link} from 'react-router-dom';
 
 
 class Header extends Component{      
@@ -19,14 +20,16 @@ class Header extends Component{
    }
   
    
-    render(){       
-               
+    render(){    
+              
         
         return(
             <header>
                 <div className="container">                    
                     <div className="logo">
-                        <img src={logo} alt="EasyBank"/>
+                        <Link to="/"> 
+                            <img src={logo} alt="EasyBank" />
+                        </Link>                         
                     </div>
                     <div className="botaoMenu" onClick={this.toggle}>  
                     <img src={menu} alt="EasyBank" />           
@@ -34,29 +37,29 @@ class Header extends Component{
                         <nav className={this.state.openMenu ? 'mobileMenu active': 'mobileMenu'}>
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <Link to="/">
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <Link to="/about">
                                         About
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <Link to="/contact">
                                         Contact
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <Link to="/blog">
                                         Blog
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Carrers
-                                    </a>
+                                    <Link to="/Carrers">
+                                        About
+                                    </Link>
                                 </li>
                             </ul>
                         </nav>
@@ -67,29 +70,29 @@ class Header extends Component{
                     <nav className="menuDesktop">
                         <ul>
                             <li>
-                                <a href="#">
+                                <Link to="/">
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="/about">
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="/contact">
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="/blog">
                                     Blog
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
-                                    Carrers
-                                </a>
+                                <Link to="/Carrers">
+                                    About
+                                </Link>
                             </li>
                         </ul>
                     </nav>
