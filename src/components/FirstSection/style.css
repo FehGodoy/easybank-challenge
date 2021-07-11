@@ -1,0 +1,107 @@
+section.wallpaper{
+    height: 970px;
+    background-color: #FAFAFA;
+    position: relative;
+    padding: 0px 50px;
+}
+
+section.wallpaper .container .box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+section.wallpaper .container .box .tituloTexto{
+    width: 50%;
+}
+
+section.wallpaper .container .box .tituloTexto .titulo h1{
+    font-size: 75px;
+    font-weight: 300;
+}
+
+section.wallpaper .container .box .tituloTexto .subtitulo{
+    padding: 0px 20px;
+    line-height: 1.5;
+}
+
+section.wallpaper .container .box .tituloTexto .subtitulo h6{
+    font-size: 20px;
+    color: #BDBCC1;
+    font-weight: 300;
+}
+
+section.wallpaper .container .box .tituloTexto .botao a{
+    padding: 15px 30px;
+    background: rgb(51,206,114);
+    background: linear-gradient(100deg, rgba(51,206,114,1) 0%, rgba(44,185,205,1) 100%);
+    font-weight: 400;    
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+}
+
+section.wallpaper .container .box .imagemMockup{
+    background-image: url(../../images/bg-intro-desktop.svg);
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;    
+}
+
+section.wallpaper .container .box .imagemMockup .imgIntro figure img{
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:991px){
+    section.wallpaper .container .box{
+        display: flex;
+        flex-direction: column;
+    }
+    section.wallpaper .container .box .tituloTexto{
+        width: 100%;
+        order: 2;
+    }
+    section.wallpaper .container .box .imagemMockup{
+        width: 100%;
+        order: 1;
+        position: relative;
+        background-size: cover ;
+    }
+    section.wallpaper{
+        height: auto;
+        padding: 40px 0px;
+    }
+    section.wallpaper .container .box .imagemMockup .imgIntro{
+        padding-top: 30px;
+    }
+    section.wallpaper .container .box .imagemMockup .imgIntro figure img{
+        position: relative;
+        right: auto;
+    }
+    section.wallpaper .container .box .tituloTexto .titulo h1{
+        text-align: center;
+        font-size: 55px;
+    }
+    section.wallpaper .container .box .tituloTexto .subtitulo h6{
+        font-weight: 400;
+        text-align: center;
+    }
+    section.wallpaper .container .box .tituloTexto .botao{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1650px){
+    section.wallpaper{
+        min-height: 580px;
+        max-height: 695px;
+    }
+    section.wallpaper .container .box .imagemMockup .imgIntro figure img{
+        bottom: 0;
+    }
+}

@@ -1,0 +1,107 @@
+header{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 999;
+}
+header .container{    
+    justify-content: space-between;    
+    display: flex;
+    align-items: center;
+}
+
+header .container nav ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+header .botaoMenu{
+    display: none;
+}
+
+header .container nav ul li{
+    margin: 0px 15px;
+}
+
+header .container nav ul li a{
+    color: #BDBCC1;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+header .container  .botao{
+    margin: 0px 20px 0px 0px;
+}
+
+header .container  .botao a{
+    padding: 15px 30px;
+    background: rgb(51,206,114);
+    background: linear-gradient(100deg, rgba(51,206,114,1) 0%, rgba(44,185,205,1) 100%);
+    font-weight: 400;    
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+}
+header .container nav.mobileMenu,header .container .closeMenu{
+    display: none;
+}
+
+
+@media screen and (max-width:991px){
+    header{
+        padding: 25px 10px;
+    }
+    header .container nav.menuDesktop{
+        display: none;
+    }
+    header .container nav.mobileMenu{
+        display: block;
+        transform: translateX(140%);
+        height: 0;
+    }    
+
+    header .container .closeMenu.active{
+        display: block;
+        z-index: 999;
+        transform: translateX(0%);
+        padding-right: 20px;
+    }
+    header .container nav.mobileMenu.active{
+        opacity: 1;
+        visibility: visible;
+        transition: transform 0.5s;
+        height: auto;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #FAFAFA;
+        transform: translateX(0%);
+    }
+    header .container nav.mobileMenu ul{
+        display: grid;
+    }
+    header .container nav.mobileMenu ul li:first-child{        
+        padding-top: 10px;
+    }
+    header .container nav.mobileMenu ul li{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    header .container .botaoMenu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 25px;
+    }
+
+    header .container .botao{
+        display: none;
+    }
+    header .botaoMenu{
+        display: block;
+    }
+}

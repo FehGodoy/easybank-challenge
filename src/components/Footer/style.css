@@ -1,0 +1,92 @@
+footer{
+    background-color: #2D314E;
+    padding: 60px 0px;
+    position: relative;
+}
+
+footer .container .box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .container .box .social{
+    margin: 10px 0px 0px 0px;
+}
+
+footer .container .box .logo{
+    margin-bottom: 20px;
+}
+
+footer .container .box .social ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .container .box .social ul li{
+    margin: 0px 10px!important;
+}
+
+footer .container .box .cont-3 ul{
+    list-style: none;
+}
+
+footer .container .box .cont-3 ul li{
+    margin: 10px 0px;
+}
+
+footer .container .box .cont-3 ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+footer .container .box .botao a{
+    padding: 15px 30px;
+    background: rgb(51,206,114);
+    background: linear-gradient(100deg, rgba(51,206,114,1) 0%, rgba(44,185,205,1) 100%);
+    font-weight: 400;    
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+}
+
+footer .copy{
+    position: absolute;
+    bottom: 45px;
+    color: #868686;
+    font-weight: 400;
+}
+
+@media screen and (max-width:991px){
+    footer .container .box{
+        flex-direction: column;        
+    }
+
+    footer .container .box .cont-3{
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    footer .container .box .logo{
+        display: flex;
+        justify-content: center;
+    }
+    footer .container .box .cont-3 ul{
+        padding-left: 0;
+    }
+    footer .container .box .cont-3 ul li{
+        text-align: center;
+    }
+    footer .container .box .cont-3 .botao{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    footer .copy{
+        position: relative;
+        bottom: auto;
+    }
+}
