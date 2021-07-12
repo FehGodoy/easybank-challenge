@@ -36,27 +36,27 @@ class Header extends Component{
                     </div>         
                         <nav className={this.state.openMenu ? 'mobileMenu active': 'mobileMenu'}>
                             <ul>
-                                <li>
+                                <li onClick={this.toggle}>
                                     <Link to="/">
                                         Home
                                     </Link>
                                 </li>
-                                <li>
+                                <li onClick={this.toggle}>
                                     <Link to="/about">
                                         About
                                     </Link>
                                 </li>
-                                <li>
+                                <li onClick={this.toggle}>
                                     <Link to="/contact">
                                         Contact
                                     </Link>
                                 </li>
-                                <li>
+                                <li onClick={this.toggle}>
                                     <Link to="/blog">
                                         Blog
                                     </Link>
                                 </li>
-                                <li>
+                                <li onClick={this.toggle}>
                                     <Link to="/Carrers">
                                         About
                                     </Link>
