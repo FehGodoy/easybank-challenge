@@ -1,0 +1,63 @@
+section.articles{
+    background-color: #FAFAFA;
+    padding: 50px 0px;
+}
+
+
+section.articles .box .tituloAll h1{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+section.articles .box .boxArticles{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.articles .box .boxArticles .boxArt{
+    width: 23%;
+    margin: 0px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+section.articles .box .boxArticles .boxArt .image{
+    height: 200px;    
+}
+
+section.articles .box .boxArticles .boxArt .image img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.articles .box .boxArticles .boxArt .boxContent{
+    padding: 20px;
+}
+
+section.articles .box .boxArticles .boxArt .boxContent .author p{
+    color: rgb(194, 194, 194);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+section.articles .box .boxArticles .boxArt .boxContent .titulo h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+section.articles .box .boxArticles .boxArt .boxContent .texto p{
+    color: #a7a7a7;
+}
+
+@media screen and (max-width:991px){
+    section.articles .box .boxArticles .boxArt{
+        width: auto;
+        margin: 15px 0px;
+    }
+    section.articles .box .boxArticles{
+        padding: 12px;
+    }
+}

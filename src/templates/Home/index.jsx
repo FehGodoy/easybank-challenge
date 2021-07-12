@@ -1,9 +1,8 @@
 import { Component } from 'react';
-import Header from '../../components/Header';
-import FirstSection from '../../components/FirstSection';
-import SecondSection from '../../components/SecondSection';
-import Articles from '../../components/Articles';
-import Footer from '../../components/Footer';
+import FirstSection from '../../components/HomeComponents/FirstSection';
+import SecondSection from '../../components/HomeComponents/SecondSection';
+import Articles from '../../components/HomeComponents/Articles';
+
 
 
 export class Home extends Component{
