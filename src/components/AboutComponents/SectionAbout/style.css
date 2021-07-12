@@ -1,0 +1,46 @@
+section.about .boxTexto .titulo h1{
+    font-weight: 300;
+    font-size: 55px;
+}
+
+section.about{
+    padding: 0px 20px;
+}
+
+section.about .images .secondImage img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+section.about .images .firstsImages .image:first-child {
+    margin-right: 10px;
+}
+section.about .images {
+    margin: 10px 0px;
+}
+section.about .images .firstsImages .image img {
+    width: 100%;
+}
+section.about .images .firstsImages {
+    display: flex;
+}
+
+section.about .boxTexto .texto p{
+    font-size: 20px;
+    color: #BDBCC1;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+@media screen and (max-width:991px){
+    section.about .boxTexto .titulo h1,section.about .boxTexto .texto p{
+        text-align: center;
+    }
+    section.about .images{
+        padding: 8px;
+    }
+    section.team .rowTeam{
+        flex-wrap: wrap;
+    }
+}
