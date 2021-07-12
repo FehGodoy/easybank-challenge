@@ -1,16 +1,4 @@
-section.wallpaperAbout{
-    background-size: cover;
-    height: 80vh;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-section.wallpaperAbout .titulo{
-    color: #fff;
-    font-size: 55px;
-}
 
 section.team .container {
     flex-direction: column;

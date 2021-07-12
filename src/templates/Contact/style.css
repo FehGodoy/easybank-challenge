@@ -1,0 +1,47 @@
+section.contato{
+    margin: 40px 0px;
+}
+
+section.contato .mapa{
+    width: 50%;
+}
+
+section.contato .mapa iframe{
+    border: 0;
+}
+
+section.contato .infoContact{
+    width: 50%;
+}
+
+section.contato .infoContact .titulo h1{
+    font-size: 55px;
+    font-weight: 300;
+    text-align: center;
+}
+
+section.contato .infoContact .subtitulo h6{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+section.contato .infoContact .box ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+section.contato .infoContact .box ul li{
+    margin: 0px 20px;
+}
+
+@media screen and (max-width:991px){
+    section.contato .mapa{
+        width: 100%;
+    }    
+    section.contato .infoContact{
+        width: 100%;
+        padding: 10px;
+    }
+}
