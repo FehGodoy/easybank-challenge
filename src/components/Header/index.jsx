@@ -55,12 +55,7 @@ class Header extends Component{
                                     <Link to="/blog">
                                         Blog
                                     </Link>
-                                </li>
-                                <li onClick={this.toggle}>
-                                    <Link to="/Carrers">
-                                        About
-                                    </Link>
-                                </li>
+                                </li>                               
                             </ul>
                         </nav>
                         <div className={this.state.closeMenu ? 'closeMenu active': 'closeMenu'} onClick={this.toggle}>
@@ -88,12 +83,7 @@ class Header extends Component{
                                 <Link to="/blog">
                                     Blog
                                 </Link>
-                            </li>
-                            <li>
-                                <Link to="/Carrers">
-                                    Carrers
-                                </Link>
-                            </li>
+                            </li>                           
                         </ul>
                     </nav>
                     <div className="botao">
